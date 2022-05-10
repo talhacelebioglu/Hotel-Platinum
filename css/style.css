@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Source Serif 4', sans-serif;
+    font-size: 1.6rem;
+    background-color: #EEEEEE ;
+    color: #222831 ;
+    line-height: 1.6;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: #222831 ;
+    text-decoration: none;
+}
+
+h1,h2 {
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+p {
+    margin: 1rem 0;
+}
+
+img {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* nav , navbar */
+.navbar {
+    background-color: var(--light);
+}
+
+.navbar a {
+    padding: 1rem 2rem;
+    margin: 0 .5rem;
+}
+
+.nav-1 a:hover {
+    border-bottom: 2px solid var(--warning);
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    /* background-color: var(--light); */
+    height: 50px;
+    padding: 0 3rem;
+}
+
+/* header */
+#hotel-header {
+    /* height: 125px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header-mid {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+/* .header-right {
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+} */
+
+.icon-1 {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-around;
+    text-align:center;
+    
+}
+
+.header-right i:hover {
+    opacity: 0.7;
+}
+
+.header-background {
+    background-image: url("../img/hotel-header.jpeg ");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 73vh;
+}
+
+.blog .header-background {
+    background-image: url("../img/bg-2.jpeg");
+    height: 60vh;
+}
+
+/* .main-header {
+    background-image: url("../img/hotel-header2.jpg ");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 85vh;
+} */
+
+.main-header .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 5;
+    color: #EEEEEE;  
+}
+
+.main-header .content div {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    padding: 2rem;
+    font-size: 2.2rem;
+}
+
+/* icons */
+.icons {
+    padding: 25px;
+    margin-top: 25px;
+}
+
+.icons h3 {
+    /* font-weight: 400; */
+    margin-bottom: 15px;
+}
+
+.icons i {
+   color: #393E46;
+   font-size: 1.8rem;
+   /* margin-bottom: 1.5rem; */
+}
+
+/* about */
+#about h2 {
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+#about p {
+    margin: 2rem 0;
+}
+
+/* gallery */
+.gallery img {
+    /* object-fit: cover; */
+    height: 48%;
+}
+
+.gallery img:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+/* cards */
+.card {
+    /* color: #fff; */
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.card-body {
+    padding: .5rem;
+}
+
+
+/* contact */
+.contact {
+    margin-top: 120px;
+}
+
+.contact-form {
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: .5rem;
+}
+
+.contact-form .form-control {
+    margin-bottom: 1.5rem;
+}
+
+.contact-form input {
+    width: 75%;
+    padding: 5px;
+    height: 35px;
+    border: 1px solid #EEEEEE;
+}
+
+.contact h2 {
+    font-size: 3.2rem;
+    font-weight: 400;
+}
+
+/* article */
+.articles {
+    padding: 3rem 5rem;
+}
+
+.article {
+    margin-top: 1.5rem;
+    color: #fff;
+}
+
+.article .column-1 {
+    background-color: #393E46;
+}
+
+.article .column-1 a {
+    color: yellow;
+    padding-left: 10px;
+}
+
+/* footer */
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 200px;
+    margin-top: 150px;
+}
+
+.footer .social a {
+    color: #00ADB5;
+    margin-right: 20px;
+}
+
+.footer a:hover {
+    opacity: 0.8;
+}
+
+.footer p {
+    color: #00ADB5;
+    padding: 10px;
+}
+
+/* mobile  */
+@media(max-width: 768px) {
+    html {
+        font-size: 8px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        height: 180px;
+        padding: 15px;
+    }
+
+    .navbar ul li {
+        padding-top: 7px;
+    }
+}
+
+
+
+
+
